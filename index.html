@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classroom Organizer</h1>
+        <div class="roster">
+            <h2>Student Roster</h2>
+            <ul id="student-list"></ul>
+        </div>
+
+        <div class="controls">
+            <h2>Add Student</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="age" placeholder="Age" required>
+            <input type="number" id="height" placeholder="Height" required>
+            <input type="text" id="favorite-subject" placeholder="Favorite Subject" required>
+            <input type="text" id="favorite-animal" placeholder="Favorite Animal" required>
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="remove-student">
+            <h2>Remove Student</h2>
+            <input type="text" id="remove-name" placeholder="Enter Name to Remove">
+            <button onclick="removeStudent()">Remove Student</button>
+        </div>
+
+        <div class="sorted-names">
+            <h2>Sorted Student Names</h2>
+            <button onclick="sortNames()">Sort Names</button>
+            <ul id="sorted-names-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
