@@ -129,5 +129,4 @@ function clearInputFields() {
     document.getElementById('remove-name').value = '';
 }
 
-// Initial display of students
 displayStudents();
