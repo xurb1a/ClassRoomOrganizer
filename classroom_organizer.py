@@ -25,9 +25,9 @@ class ClassroomOrganizer:
     
   def remove_student(self, name):
         for student in student_roster:
-            if student['name'].lower() == name.lower():  # Case-insensitive comparison
+            if student['name'].lower() == name.lower():  
                 student_roster.remove(student)
-                self.sorted_names = self._sort_alphabetically(student_roster)  # Re-sort names after removing
+                self.sorted_names = self._sort_alphabetically(student_roster)  
                 return f"Student {name} removed successfully!"
         return f"Student {name} not found."
 
